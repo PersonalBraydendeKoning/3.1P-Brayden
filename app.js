@@ -1,36 +1,50 @@
-const Home = { 
+const Home = {
   template: `
       <div>
-          <h2>Home Page</h2>
-          <p>Welcome to my Task.</p>
-          
-          <h3>1. Responsive Design features</h3>
-          <p>Used media queries in CSS for different screen sizes.</p>
+          <section id="Main Information">
+              <h1>Brayden de Koning</h1>
+              <p>Phone: 0411 111 111 | Email: brayden@test.com</p>
+              <p>Address: Street Suburb, State, Postcode</p>
+              <p>LinkedIn: <a href="www.linkedin.com/in/brayden de koning">Linkedin URL .com</a></p>
+              </section>
 
-          <h3>2. HTML</h3>
-          <p>Added a table, form, headers, and a favicon.</p>
+          <section id="career-profile">
+              <h2>Career Profile</h2>
+              <p>Personable and astute IT student with a proven track record in planning, coordinating, and managing technological events. Strong leadership and communication skills developed through various roles, including team leader positions. Committed to delivering high-quality results in fast-paced environments.</p>
+          </section>
 
-          <h3>3. CSS</h3>
-          <p>Styles are in an external CSS file. Used media queries for responsiveness.</p>
+          <section id="education">
+              <h2>Education</h2>
+              <p>Bachelor of Information Technologies, January 2022 - December 2024</p>
+              <p>Deakin University, Burwood, VIC</p>
+              <p>High School, January 2014 - December 2019</p>
+              <p>Beacon hills College, Berwick</p>
+              <ul>
+                  <li>Major: [Major Name]</li>
+                  <li>Achievements: [Insert achievements, if applicable]</li>
+              </ul>
+          </section>
 
-          <h3>4. Vue 3</h3>
-          <p>Used Vue 3 for the project. Added Vue Router for page navigation.</p>
-
-          <h3>5. Handling User Inputs</h3>
-          <p>Used Vue directives like v-for and v-model.</p>
-
-          <h3>6. Vue Components</h3>
-          <p>Created Vue components for Home, Projects, and Contact pages.</p>
+          <section id="experience">
+              <h2>Experience</h2>
+              <p>Traffic Controller, August 2020 - July 2021</p>
+              <p>Knox Private Hospital, Burwood, VIC</p>
+              <ul>
+                  <li>Managed traffic and people for Covid swabs, adhering to strict PPE requirements</li>
+                  <li>Ensured the safety of all workers on construction sites through effective communication</li>
+                  <li>Developed nurses in a Covid-specific ward, adhering to strict PPE requirements</li>
+                  <li>Led in calming agitated patients and facilitated communication within the hospital</li>
+                  <li>Achievements: Appointed Team Leader for School Technology Team for 2 years</li>
+              </ul>
+          </section>
       </div>
-  ` 
+  `
 };
-
-
 
 const Projects = {
   template: `
       <div>
-          <h2>Project Page</h2>
+          <h2>My Projects</h2>
           <table>
               <tr>
                   <th>Name</th>
@@ -45,12 +59,23 @@ const Projects = {
   data() {
     return {
       projects: [
-        { name: 'Project 1.1P', description: 'Description 1' },
-        { name: 'Project 1.2P', description: 'Description 2' }
+        {
+          name: '1.1P - HTML, CSS, Git and GitHub',
+          description: 'Built an HTML page featuring various HTML tags like image, table, and form. Styled the page using inline, internal, and external CSS. Initialized a Git repository and pushed the code to GitHub.'
+        },
+        {
+          name: 'SIT1.2P - Responsive Web Design',
+          description: 'Created a responsive web page compatible with various devices. Wrote an essay on the importance of responsive web design and its implementation using HTML and CSS.'
+        },
+        {
+          name: '1.3P - Personal Portfolio Website',
+          description: 'Developed a personal portfolio website using HTML, CSS, and Vue 3. The website is fully responsive and adheres to the concepts taught in the unit, including Vue Router and handling user inputs.'
+        }
       ]
     };
   }
 };
+
 
 const Contact = {
   template: `
